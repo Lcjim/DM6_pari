@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DM6_pari",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DM6_pari::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DM6_pari-Debug-48b57f66db110609f86e.json",
+					"name" : "DM6_pari",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/jimena.ccarita-asce/OneDrive - JUNIA Grande \u00e9cole d'ing\u00e9nieurs/Documents/GitHub/DM6_pari/cmake-build-debug",
+		"source" : "C:/Users/jimena.ccarita-asce/OneDrive - JUNIA Grande \u00e9cole d'ing\u00e9nieurs/Documents/GitHub/DM6_pari"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}
