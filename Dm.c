@@ -4,18 +4,18 @@
 
 int random_number(){
     srand(time(NULL));
-    int chance_win = (rand() % 100) + 1 ;
-         return chance_win;
-
+    int chance_win = (rand() % 100) + 1;
+    printf("%d", chance_win);
+    return chance_win;
 }
 
 
 int main(){
-    int probaWin = random_number();
     int initial_sum = 100;
     int end_sum = 0;
     int reponse;
     int decisionMoney;
+    int probaWin = random_number();
 
 
     printf("veut-tu commencer à jouer avec la somme initial ou la retirer, 0:[oui] 1:[non]:\n");
@@ -31,7 +31,8 @@ int main(){
                 printf("desolé,mais vous avez depassé la limite donné\n");
                 break;
             }else{
-                printf("preuve",probaWin);  //modifier pour q fasse la proba de 50%//
+                printf("preuve de proba  %d\n",probaWin);
+                //modifier pour q fasse la proba de 50%//
                 if (probaWin < 50 ) {
                     end_sum = (decisionMoney * 2);
                     end_sum = initial_sum + end_sum;
@@ -48,9 +49,8 @@ int main(){
         }
         printf("vous avez perdu!");
     }else{
-        printf("vous avez choisi de retirer l'argent!\n");
-        printf("fin du jeu \n tu as retirer:", initial_sum);
-        //modifier poursa print 100 dollars //
+        end_sum = initial_sum;
+        printf(" fin du jeu!\n vous avez choisi de retirer l'argent!\n le joueur a retirer %d dollars",end_sum);
     }
 return 0;
 }
