@@ -5,7 +5,6 @@
 int random_number(){
     srand(time(NULL));
     int chance_win = (rand() % 100) + 1;
-    printf("%d", chance_win);
     return chance_win;
 }
 
@@ -27,18 +26,21 @@ int main(){
             printf("donner la somme d'argent que tu veux parier:\n");
             scanf("%d", &decisionMoney);
             getchar();
+            probaWin=random_number();
+            printf("tu as telle chance de gagner: %d\n",probaWin);
+
             if (decisionMoney > initial_sum){
                 printf("desolé,mais vous avez depassé la limite donné\n");
                 break;
             }else{
-                printf("preuve de proba  %d\n",probaWin);
-                //modifier pour q fasse la proba de 50%//
-                if (probaWin < 50 ) {
+                    //modifier pour q fasse la proba de 50%//
+                if (probaWin < 50) {
                     end_sum = (decisionMoney * 2);
                     end_sum = initial_sum + end_sum;
                     initial_sum = end_sum;
                     printf("vous avez le double de %d:\n",decisionMoney);
                     printf("vous avez maintenant %d:\n", end_sum);
+
                 }else{
                     end_sum = initial_sum - decisionMoney;
                     initial_sum = end_sum;
