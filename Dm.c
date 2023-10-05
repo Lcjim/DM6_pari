@@ -36,8 +36,6 @@ int main(){
                     //modifier pour q fasse la proba de 50%//
                 if (probaWin < 50) {
                     end_sum = (decisionMoney * 2);
-                    end_sum = initial_sum + end_sum;
-                    initial_sum = end_sum;
                     printf("vous avez le double de %d:\n",decisionMoney);
                     printf("vous avez maintenant %d:\n", end_sum);
 
